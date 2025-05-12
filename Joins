@@ -1,0 +1,4 @@
+#Inner Join - The INNER JOIN returns only the rows where there is a match in both tables
+SELECT employees.name, departments.name
+FROM employees
+INNER JOIN departments ON employees.department_id = departments.id;
