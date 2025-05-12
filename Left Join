@@ -1,0 +1,5 @@
+#The LEFT JOIN returns all records from the left table (the first one), and the matched records from the right table (the second one). If no match is found, NULL values are returned for columns from the right table.
+
+SELECT employees.name, departments.name
+FROM employees
+LEFT JOIN departments ON employees.department_id = departments.id;
