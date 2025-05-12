@@ -1,0 +1,5 @@
+#FULL JOIN - The FULL OUTER JOIN returns all records when there is a match in either the left or the right table. If there's no match, NULL values will appear in the columns where the match is missing.
+
+SELECT employees.name, departments.name
+FROM employees
+FULL OUTER JOIN departments ON employees.department_id = departments.id;
