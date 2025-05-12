@@ -1,0 +1,10 @@
+SELECT 
+    c.name AS customer_name,
+    COUNT(DISTINCT o.order_id) AS total_orders,
+    COALESCE(SUM(oi.quantity), 0) AS total_items
+FROM 
+    customers c
+LEFT JOIN orders o ON c.customer_id = o.customer_id
+LEFT JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY 
+    c.customer_id, c.name;
