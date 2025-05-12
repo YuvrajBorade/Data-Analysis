@@ -1,0 +1,6 @@
+#Having - The HAVING clause is used to filter groups after the GROUP BY clause has been applied. It's similar to the WHERE clause but works with aggregated data.
+
+SELECT Region, SUM(SalesAmount) AS TotalSales
+FROM sales
+GROUP BY Region
+HAVING SUM(SalesAmount) > 1000;
