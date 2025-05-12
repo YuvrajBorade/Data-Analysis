@@ -1,0 +1,5 @@
+#RIGHT JOIN - The RIGHT JOIN is the opposite of the LEFT JOIN. It returns all records from the right table, and the matched records from the left table. If no match is found, NULL values are returned for columns from the left table.
+
+SELECT employees.name, departments.name
+FROM employees
+RIGHT JOIN departments ON employees.department_id = departments.id;
