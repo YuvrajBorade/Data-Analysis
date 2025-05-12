@@ -1,0 +1,5 @@
+#Count - COUNT() is an aggregate function that returns the number of rows that match a specified condition.
+
+SELECT Region, COUNT(OrderID) AS SalesCount
+FROM sales
+GROUP BY Region;
