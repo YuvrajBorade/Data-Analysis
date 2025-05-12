@@ -1,0 +1,4 @@
+SELECT Product, COUNT(OrderID) AS SalesCount, SUM(SalesAmount) AS TotalSales
+FROM sales
+GROUP BY Product
+HAVING SUM(SalesAmount) > 1000;
