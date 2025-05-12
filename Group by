@@ -1,0 +1,5 @@
+#GROUP BY - The GROUP BY clause is used to group rows that have the same values into summary rows, like "total sales by region" or "number of customers per product
+
+SELECT Region, SUM(SalesAmount) AS TotalSales
+FROM sales
+GROUP BY Region;
