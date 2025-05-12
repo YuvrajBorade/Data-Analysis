@@ -1,0 +1,5 @@
+Sum - SUM() is an aggregate function that returns the total sum of a numeric column (e.g., total sales).
+
+SELECT Product, SUM(SalesAmount) AS TotalSales
+FROM sales
+GROUP BY Product;
